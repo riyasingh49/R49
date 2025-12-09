@@ -3,10 +3,28 @@ import image1 from "../assets/image1.jpg";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import image2 from "../assets/image2.avif";
+import image3 from "../assets/image3.avif";
+import image4 from "../assets/image4.avif";
+import image5 from "../assets/image5.avif";
+import image6 from "../assets/image6.avif";
+import image7 from "../assets/image7.avif";
+import image8 from "../assets/image8.avif";
+import image9 from "../assets/image9.avif";
+import image10 from "../assets/image10.avif";
+import image11 from "../assets/image11.avif";
+import image12 from "../assets/image12.avif";
+import image13 from "../assets/image13.avif";
+
 
 const Agence = () => {
   gsap.registerPlugin(ScrollTrigger);
   const imageDivRef = useRef(null)
+
+  const imageArray = [
+    image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12 , image13
+
+  ]
   useGSAP(function(){
     gsap.to(imageDivRef.current,{
       scrollTrigger:{
@@ -14,7 +32,12 @@ const Agence = () => {
         markers:true,
         start:'top 28%',
         end: 'top -70%',
-        pin:true
+        pin:true,
+        onUpdate:()=>{
+          // const imageIndex = Math.floor(self.onprogress * imageArray.length)
+          console.log("hgf");
+          
+        }
       }
     })
   })
