@@ -43,6 +43,12 @@ const Agence = () => {
         start: "top 28%",
         end: "top -70%",
         pin: true,
+        pinSpacing: true,
+        pinReparent: true,
+        pinType: "transform",
+        scrub: 1, // smooth scrubbing with ls easing 
+        anticipatePin: 1, 
+        invalidateOnRefresh: true,
         onUpdate: (elem) => {
           let imageIndex;
           if (elem.progress < 1) {
@@ -58,12 +64,17 @@ const Agence = () => {
 
   return (
     <div>
-      <div className="section1">
+      <div className="section1 py-1">
         <div
           ref={imageDivRef}
           className="absolute overflow-hidden h-[20vw] w-[15vw] rounded-2xl  left-[30vw] top-60"
         >
-          <img ref = {imageRef} className="h-full object-cover w-full" src={image1} alt="" />
+          <img
+            ref={imageRef}
+            className="h-full object-cover w-full"
+            src={image1}
+            alt=""
+          />
         </div>
         <div className="relative font-[font2]">
           <div className=" mt-[55vh]">
@@ -74,11 +85,10 @@ const Agence = () => {
           </div>
           <div className="pl-[47%] mt-[20]">
             <p className="text-5xl">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              Step into a world shaped by nature’s gentle rhythm, where every
-              moment feels alive, every breath carries calm, and every
-              experience invites you to rediscover beauty, peace, and connection
-              within.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Step into a
+              world shaped by nature’s gentle rhythm, where every moment feels
+              alive, every breath carries calm, and every experience invites you
+              to rediscover beauty, peace, and connection within.
             </p>
           </div>
         </div>
