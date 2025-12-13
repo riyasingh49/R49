@@ -46,7 +46,7 @@ const Agence = () => {
         pinSpacing: true,
         pinReparent: true,
         pinType: "transform",
-        scrub: 1, // smooth scrubbing with ls easing 
+        scrub: 1,  
         anticipatePin: 1, 
         invalidateOnRefresh: true,
         onUpdate: (elem) => {
