@@ -18,7 +18,7 @@ const Navbar = () => {
         }}
         className=" h-14 bg-black relative w-[16vw]"
       >
-        <div ref={navGreenRef} className="bg-[#a07ee4] absolute transition-all top-0 h-0 w-full"></div>
+        <div ref={navGreenRef} className="bg-[#7d4cd7] absolute transition-all top-0 h-0 w-full"></div>
         <div className="relative "></div>
       </div>
     </div>
