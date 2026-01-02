@@ -82,15 +82,15 @@ useGSAP(function () {
     <div
       ref={fullScreenRef}
       id="fullscreennav"
-      className="fullscreennav hidden h-screen w-full overflow-hidden z-50 text-white absolute"
+      className="fullscreennav h-screen w-full overflow-hidden z-50 text-white absolute"
     >
       <div className="h-screen w-full fixed">
         <div className="h-full w-full flex ">
-          <div className=" stairing h-full w-1/5 bg-red-900"></div>
-          <div className=" stairing h-full w-1/5 bg-red-900"></div>
-          <div className=" stairing h-full w-1/5 bg-red-900"></div>
-          <div className=" stairing h-full w-1/5 bg-red-900"></div>
-          <div className=" stairing h-full w-1/5 bg-red-900"></div>
+          <div className=" stairing h-full w-1/5 bg-black"></div>
+          <div className=" stairing h-full w-1/5 bg-black"></div>
+          <div className=" stairing h-full w-1/5 bg-black"></div>
+          <div className=" stairing h-full w-1/5 bg-black"></div>
+          <div className=" stairing h-full w-1/5 bg-black"></div>
         </div>
       </div>
       <div ref={fullNavLinksRef} className="relative">
