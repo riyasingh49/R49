@@ -3,7 +3,7 @@ import Video from "./Video";
 
 const HomeTopText = () => {
   return (
-    <div className="font-[font1] pt-5 text-center">
+    <div className="font-[font1] pt-5 text-center text-white">
       <div className="text-[8vw] uppercase leading-[8vw] justify-center flex items-center">
         Inspired by
       </div>
