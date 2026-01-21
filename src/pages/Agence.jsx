@@ -15,6 +15,7 @@ import image10 from "../assets/image10.avif";
 import image11 from "../assets/image11.avif";
 import image12 from "../assets/image12.avif";
 import image13 from "../assets/image13.avif";
+import { Link } from "react-router-dom";
 
 const Agence = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -64,10 +65,10 @@ const Agence = () => {
 
   return (
     <div className="bg-blue-100">
-      <div className="section1 py-1">
+      <div className="section1 py-1 mb-40">
         <div
           ref={imageDivRef}
-          className="absolute overflow-hidden h-[20vw] w-[15vw] rounded-2xl  left-[30vw] top-60"
+          className="absolute overflow-hidden h-[20vw] w-[15vw] rounded-2xl  left-[35vw] top-60"
         >
           <img
             ref={imageRef}
@@ -83,7 +84,7 @@ const Agence = () => {
               Harmony
             </h1>
           </div>
-          <div className="pl-[47%] mt-[20]">
+          <div className="pl-[51%] mt-[20] pr-2">
             <p className="text-5xl">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Step into a
               world shaped by nature’s gentle rhythm, where every moment feels
@@ -93,7 +94,26 @@ const Agence = () => {
           </div>
         </div>
       </div>
-      <div className="section2 h-screen"></div>
+      <div className="h-[400px] w-full bg-black  relative">
+        <div className="text-white flex gap-4 p-4 pt-7">
+          <div className="font-[font2] text-6xl border-2 p-2 px-4 rounded-full hover:border-[#D3FD50] hover:text-[#D3FD50] items-center ">
+            <Link className="text-[5.5vw] mt-6" to="/projects">
+              explore
+            </Link>
+          </div>
+          <div className="font-[font2] text-6xl border-2 p-2 px-4 rounded-full hover:border-[#D3FD50] hover:text-[#D3FD50] items-center ">
+            <Link className="text-[5.5vw]  mt-6" to="/agence">
+              experience
+            </Link>
+          </div>
+          <div className="font-[font2] text-[5.5vw] text-6xl border-2 p-2 px-4 rounded-full hover:border-[#D3FD50] hover:text-[#D3FD50]  items-center ml-auto">
+            contact
+          </div>
+        </div>
+        <div className="font-[font1] text-gray-500 absolute bottom-0 w-full p-2 ">
+          © 2026 Riya Singh. All rights reserved
+        </div>
+      </div>
     </div>
   );
 };
