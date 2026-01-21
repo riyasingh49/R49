@@ -1,6 +1,7 @@
 import React, { useContext, useRef } from "react";
 import logo from "../../assets/logo.png";
 import { NavbarContext } from "../../context/NavContext";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navGreenRef = useRef(null);
@@ -9,18 +10,18 @@ const Navbar = () => {
   return (
     <div className="z-40 flex fixed top-0 w-full items-center justify-between">
       <div>
-        <img src={logo} alt="Nav Logo" className="w-[6vw] h-10" />
+        <Link to="/">
+          <img src={logo} alt="Nav Logo" className="w-[6vw] h-10" />
+        </Link>
       </div>
 
       <div
         onClick={() => setnavOpen(true)}
         onMouseEnter={() => {
-          if (navGreenRef.current)
-            navGreenRef.current.style.height = "100%";
+          if (navGreenRef.current) navGreenRef.current.style.height = "100%";
         }}
         onMouseLeave={() => {
-          if (navGreenRef.current)
-            navGreenRef.current.style.height = "0%";
+          if (navGreenRef.current) navGreenRef.current.style.height = "0%";
         }}
         className="h-14 bg-black relative w-[16vw] "
       >
