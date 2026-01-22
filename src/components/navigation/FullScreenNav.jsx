@@ -96,7 +96,7 @@ useGSAP(function () {
       <div ref={fullNavLinksRef} className="relative">
         <div className="navlink flex w-full justify-between p-1 items-start">
           <div>
-            <img src={logo} alt="Nav Logo" className="w-[6vw] h-auto" />
+            <img src={logo} alt="Nav Logo" className="w-[4vw] h-auto" />
           </div>
           <div
             onClick={() => {
